@@ -1,1 +1,36 @@
-<p>signup works!</p>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img class="userIcon" src="assets/icons/user-icon-male.png" alt="User Icon" />
+            <img class="userIcon" src="assets/icons/user-icon-female.png" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+
+        <form>
+            <h3>Let's signup by filling the form</h3>
+            <input [(ngModel)]="model.firstName" type="text" id="fname" class="fadeIn second" name="fname"
+                placeholder="Your first name">
+            <input [(ngModel)]="model.lastName" type="text" id="lname" class="fadeIn second" name="lname"
+                placeholder="Your last name">
+            <input [(ngModel)]="model.address" type="text" id="address" class="fadeIn second" name="address"
+                placeholder="Address">
+            <input [(ngModel)]="model.email" type="text" id="email" class="fadeIn second" name="email"
+                placeholder="Email">
+            <input [(ngModel)]="model.userName" type="text" id="username" class="fadeIn second" name="username"
+                placeholder="Desired user name">
+            <input [(ngModel)]="model.password" type="text" id="password" class="fadeIn third" name="password"
+                placeholder="Password">
+            <input type="submit" class="fadeIn fourth" value="Sign Up" (click)="signupButtonClicked($event)">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" routerLink="/login">Already a member? Please sign in through here</a>
+        </div>
+
+    </div>
+</div>

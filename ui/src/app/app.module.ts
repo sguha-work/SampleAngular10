@@ -12,6 +12,7 @@ import { FooterComponent } from './components/home/footer/footer.component';
 import { MenuComponent } from './components/home/menu/menu.component';
 import { ContentComponent } from './components/home/content/content.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
